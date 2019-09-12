@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Song, type: :model do
   # Association test
   it { should belong_to(:album)}
+  it { should belong_to(:gender)}
   # Validation
   it { should validate_presence_of(:name) }
   it { should validate_presence_of(:spotify_url) }

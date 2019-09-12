@@ -4,8 +4,10 @@ RSpec.describe 'songs API', type: :request do
   # initialize test data
   let!(:artist) { create(:artist) }
   let!(:album) { create(:album, artist_id: artist.id) }
-  let!(:songs) { create_list(:song, 10, album_id: album.id) }
+  let!(:gender) { create(:gender) }
+  let!(:songs) { create_list(:song, 10, album_id: album.id, gender_id: gender.id) }
   let(:artist_id) { artist.id }
+  let(:gender_id) { gender.id }
   let(:album_id) { album.id }
 
   # Test suite for GET /artists
