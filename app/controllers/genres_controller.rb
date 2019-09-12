@@ -1,6 +1,6 @@
 class GenresController < ApplicationController
   def index
-    @genre = Genre.find(params[:id])
-    json_response(@genre.songs)
+    @gender = Gender.find(params[:id])
+    json_response(@gender.songs)
   end
 end
