@@ -1,5 +1,7 @@
 class SongsController < ApplicationController
-  def show
+  def index
+    @album = Album.find(params[:id])
+    json_response(@album.songs)
   end
-  
+
 end
