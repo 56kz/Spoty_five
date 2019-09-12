@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get 'artists', to: 'artists#index'
   get 'artists/:id/albums', to: 'albums#index'
   get 'albums/:id/songs', to: 'songs#index'
-  # get 'genres/:genre_name/random_song', to:'genres#show'
+  get 'genres/:id/random_song', to:'genres#index'
 
 end

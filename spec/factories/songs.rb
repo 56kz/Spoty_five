@@ -7,5 +7,6 @@ FactoryBot.define do
     explicit { true }
     spotify_id { Faker::Lorem.word }
     album_id nil
+    gender_id nil
   end
 end
