@@ -1,9 +1,8 @@
 class Api::V1::ArtistsController < ApplicationController
   def index
-    @artists = Artist.all
-    render json: @artists
+    #esta en spoti five
   end
   def show
-
+    #esta en spoti five
   end
 end

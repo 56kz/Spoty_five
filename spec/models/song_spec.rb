@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-# Test suite for the Todo model
 RSpec.describe Song, type: :model do
   it { should validate_presence_of(:name) }
   it { should validate_presence_of(:spotify_url) }

@@ -1,4 +1,3 @@
-# spec/requests/todos_spec.rb
 require 'rails_helper'
 
 RSpec.describe 'Artists API', type: :request do
@@ -6,10 +5,10 @@ RSpec.describe 'Artists API', type: :request do
   let!(:artists) { create_list(:artist, 10) }
   let(:artist_id) { artists.first.id }
 
-  # Test suite for GET /todos
-  describe 'GET /api/v1/artists' do
+  # Test suite for GET /artists
+  describe 'GET /artists' do
     # make HTTP get request before each example
-    before { get '/api/v1/artists' }
+    before { get '/artists' }
 
     it 'returns artists' do
       # Note `json` is a custom helper to parse JSON responses
